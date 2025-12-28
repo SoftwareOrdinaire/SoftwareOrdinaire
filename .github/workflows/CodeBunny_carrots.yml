@@ -12,7 +12,7 @@ jobs:
       - name: 📡 Contacting CodeBunny Brain
         run: |
           # We send the PR data to the CodeBunny public server
-          curl -X POST "[https://codebunny-5o9o.onrender.com/webhook/github](https://codebunny-5o9o.onrender.com/webhook/github)" \
+          curl -X POST "https://codebunny-5o9o.onrender.com/webhook/github" \
           -H "Content-Type: application/json" \
           -d '${{ toJSON(github) }}' \
           --fail \
